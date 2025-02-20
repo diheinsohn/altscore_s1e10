@@ -13,6 +13,8 @@ Sectors still under Imperial control, awaiting your predictions to reveal the hi
 - mobility.parquet: device_id // lat // lon // timestamp
  A data set containing the secret movement patterns of operatives, smugglers, and civilians across the galaxy. These movements hold the clues to understanding the local economies of each region.
 
+**Results are measured in RMSQ**
+
 **What can we obtain from datasets?**
 1. From lat/lon we can obtain hex_id via h3 package using *`resolution = 8`*.
 2. Per hex_id obtain an "area" of the hex using Polygon *`hex_area_df`*.
